@@ -16,6 +16,9 @@ const { connect } = require('mongoose');
 
 const app = express();
 
+//body parser
+app.use(express.json());
+
 // devlogging middleware
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
