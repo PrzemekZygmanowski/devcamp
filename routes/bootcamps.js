@@ -1,7 +1,7 @@
 const express = require('express');
 const {
-  getBootcamps,
   getBootcamp,
+  getBootcamps,
   createBootcamp,
   updateBootcamp,
   deleteBootcamp,
@@ -16,4 +16,5 @@ router
   .get(getBootcamp)
   .put(updateBootcamp)
   .delete(deleteBootcamp);
+
 module.exports = router;
